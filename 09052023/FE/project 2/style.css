@@ -1,0 +1,19 @@
+ul {
+    list-style-type: ; /* upper-roman none square */
+}
+table, td, th {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+.tab-2 {
+    margin-top: 40px; 
+    }
+
+.grey {
+    background-color: gray;
+}
+.sum {
+        color: rgb(221, 49, 49);
+    }

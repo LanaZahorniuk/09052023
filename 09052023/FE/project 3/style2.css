@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(213, 163, 233);
+    margin: 10px;
+}
+main {
+    display: flex;
+    /*  по горизонтале justify-content: space-around; justify-content: flex-start; */
+     /* по вертикале align-items: flex-end; */
+    flex-wrap: wrap; /* перенос на др строку */
+    height: 100vh;
+    background-color: antiquewhite;
+}

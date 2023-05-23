@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.item-1 {
+     /* margin-bottom: 20px; отступ снизу */
+}
+.item-2 {
+    margin-left: 200px;
+    background-color: aquamarine;
+}
+.item-3 {
+    margin-left: 400px;
+    background-color: rgb(221, 165, 229);
+}
