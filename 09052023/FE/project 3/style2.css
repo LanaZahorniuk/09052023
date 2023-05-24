@@ -1,19 +1,75 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* вулючает в себя padding border*/
 }
 .item {
-    width: 200px;
-    height: 200px;
+    width: calc(50% - 20px);
+    aspect-ratio: 16/9;
     background-color: rgb(213, 163, 233);
     margin: 10px;
+    background-size: cover; /* contain*/
+    transition: 1s;
+    border-radius: 8px;
+    /* background-repeat: no-repeat;*/
+    /* height: 200px;
+    height: 350px;
+     */
+}
+/* body {
+    background-color: rgb(221, 208, 214);
+} */
+.item:hover {
+    transform: scale(1.10); /* rotate(5deg); */
+}
+h1:hover {
+    color: blueviolet;
+}
+.item-1 {
+    background-image: url(./images/blossom.jpg);
+}
+.item-2 {
+    background-image: url(./images/hydrangea.jpg);
+}
+.item-3 {
+    background-image: url(./images/lavender.jpg);
+}
+.item-4 {
+    background-image: url(./images/lila.jpg);
+}
+.item-5 {
+    background-image: url(./images/lotus.jpg);
+}
+.item-6 {
+    background-image: url(./images/piony.jpg);
+}
+.item-7 {
+    background-image: url(./images/rose.jpg);
+}
+.item-8 {
+    background-image: url(./images/tulip.jpg);
+}
+header {
+    background-color: rgb(221, 208, 214);
+    padding: 20px;
+}
+h1 {
+    font-size: 48px;
+    text-align: center;
 }
 main {
+    width: 90%;
+    margin: auto;
     display: flex;
-    /*  по горизонтале justify-content: space-around; justify-content: flex-start; */
-     /* по вертикале align-items: flex-end; */
     flex-wrap: wrap; /* перенос на др строку */
-    height: 100vh;
+    padding: 30px;
     background-color: antiquewhite;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px rgba(231, 180, 232, 0.5);
+    
+
+     /* по горизонтале justify-content: space-around; justify-content: flex-start; */
+     /* по вертикале align-items: flex-end; */
+     /* height: 100vh; высота экрана*/
 }
