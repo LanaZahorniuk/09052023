@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    background-color: antiquewhite;
+    margin-top: 50px;
+    padding: 20px;
+}
+.item {
+    width: 200px;
+    height: 200px; 
+    background-color: rgb(238, 192, 239); 
+    margin: 20px;  
+}
+.item-1 {
+    width: calc(33.3% - 20px);
+    margin: 10px
+}
+.a {
+    display: flex;
+    justify-content: center;
+    }
+.b {
+    display: flex;
+    justify-content: space-between;
+}
+.c {
+    display: flex;
+    flex-wrap: wrap;
+}
