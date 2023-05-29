@@ -1,4 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.text {
+    width: 50%;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+}
+a {
+    display: block;
+    background-color: aqua;
 }

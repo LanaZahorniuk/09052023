@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #EEEFF1;
+    padding: 100px 0;
+    }
+    
+    .wrapper {
+        width: 30%;
+        margin: auto;
+    }
+    
+    h3 {
+        font-weight: 500; /* жирность текста */
+        font-size: 32px; /* размер шрифта */
+        text-align: center; /* отцентровка текста */
+        margin-bottom: 50px;
+    }
+
+p {
+    color: #727272;
+    text-align: center;
+    margin-bottom: 65px;
+}
