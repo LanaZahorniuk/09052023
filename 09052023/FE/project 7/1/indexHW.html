@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+
+        }
+
+        .red {
+            background-color: red;
+            z-index: -1;
+        }
+
+        .green {
+            background-color: green;
+            z-index: 1;
+            left: 50px;
+            top: 50px;         
+        }
+
+        .green:hover {
+            transform: scale(1.5) rotate(-24.5deg);
+            transition: 1.3s;
+        }
+
+        .blue {
+            background-color: blue;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item red"></div>
+    <div class="item green"></div>
+    <div class="item blue"></div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    /* position: absolute; /* задаем координаты элементу*/
+    /* right: 0;
+    top: 50px; */
+}
+.item-2 {
+    position: absolute;
+    background-color: aqua;
+    left: 40px;
+    top: 40px;
+    z-index: -1; /*размещение на слой ниже*/
+}
+.item-3 {
+    background-color: antiquewhite;
+}
