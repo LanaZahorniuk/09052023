@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(217, 171, 247);
+}
+
+#area {
+    background: rgb(190, 121, 236);
+    width: 400px;
+    aspect-ratio: 1;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#object {
+    background: beige;
+    width: 60px;
+    aspect-ratio: 1;
+    transform: translateY(-100%);
+    /* transition: 1s; */
+    position: relative;
+
+}
+
+#object.start {
+    /*vtransform: translateY(400px); */
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+    to {
+        transform: translateY(400px);
+    }
+}
