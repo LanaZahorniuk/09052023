@@ -1,0 +1,15 @@
+
+#!/bin/bash
+
+USER=$(whoami)
+
+DATE=$(date)
+
+DIRECTORY=$(pwd)
+
+
+echo "Data: $DATE"
+
+echo "Hello, $USER!"
+
+echo "Я работаю из: $DIRECTORY"
