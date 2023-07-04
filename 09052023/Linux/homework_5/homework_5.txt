@@ -1,15 +1,7 @@
-
 #!/bin/bash
 
-USER=$(whoami)
+date
 
-DATE=$(date)
+echo "Hallo $(whoami)"
 
-DIRECTORY=$(pwd)
-
-
-echo "Data: $DATE"
-
-echo "Hello, $USER!"
-
-echo "Я работаю из: $DIRECTORY"
+pwd
