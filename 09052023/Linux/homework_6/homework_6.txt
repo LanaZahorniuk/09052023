@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 for ((i=1; i<=10; i++))
@@ -12,8 +11,14 @@ ps aux | wc -l
 
 lscpu > processor.txt
 
+cat /etc/os-release | head -1 > operating_system.txt
+
+
+cut -d '"' -f 2 operating_system.txt >> operating_system.txt
+
 
 for ((i=50; i<=100; i++))
 do
-touch = "${i}.txt"
+touch "/opt/090523_morning/zahorniuk/home_work/hw_2/txt/${i}.txt"
 done
+
