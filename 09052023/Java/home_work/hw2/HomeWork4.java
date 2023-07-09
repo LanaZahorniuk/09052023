@@ -1,6 +1,5 @@
 package home_work.hw2;
 
-import java.util.Scanner;
 
 public class HomeWork4 {
     public static void main(String[] args) {
