@@ -1,0 +1,13 @@
+#!/bin/bash
+ date
+ echo "it works!"
+
+        echo -n "Enter you name: "
+        read name
+        echo "Welcome $name, hello!"
+
+for run in {1..10}
+do
+echo $run
+sleep .5
+done

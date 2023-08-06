@@ -1,0 +1,19 @@
+#!/bin/bash
+ date
+ echo "it works!"
+
+        echo -n "Enter you name: " #ключ -n не дает переходить на новую строку
+        read name  #name это переменная
+        echo "Welcome $name, hello!"
+
+#цикл for
+for run in {1..10} #run переменная
+do #команда выполнения
+echo $run #вывод на экран
+sleep .5 #приторможение вывода
+done #конец выполнения цикла
+
+
+#!/bin/bash
+ date
+ echo "Hello Lana!"

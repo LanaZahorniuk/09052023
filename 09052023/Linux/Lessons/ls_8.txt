@@ -1,0 +1,21 @@
+
+1 Создат полный путь /home/user/student
+2 Создаст файл по этому пути (rAndom.txt)и запишет в него вывод команды ls, включая скрытые вложения из папки /sys (только первые три cроки)
+3  Скопирует содержимое домашней папки вашего пользователя в папку, созданную ранее
+4 Дозапишет в файл rAndom.txt вывод команды, показывающей, сколько места осталось в разделах жесткого диска
+5 Создаст 25 пустых папок с названием от 24 до 0 в пути, прописанном в путнкте 1
+6 Переместит папку student по новому пути /opt/neW с переименованием в Iamstudent
+7 Выведет на экран DONE
+
+#!/bin/bash
+mkdir -p /home/user/student
+ls -a /sys | head -3 >> /home/user/student/rAndom.txt
+cp -r /root/ /home/user/student
+df -h >> /home/user/student/rAndom.txt
+for run in {24..0}
+do
+mkdir -p /home/user/student/$run
+done
+mkdir -p /opt/neW/
+mv /home/user/student/ /opt/neW/Iamstudent
+echo 'DONE'

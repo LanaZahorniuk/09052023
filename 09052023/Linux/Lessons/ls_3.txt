@@ -1,0 +1,18 @@
+#!/bin/bash
+
+TEST_DIR="/home /var/log"
+DATE=`date`
+echo "Check date $DATE" >> /opt/090523_morning/zahorniuk/practice/task2/Result.txt
+
+for DIR in $TEST_DIR
+    do
+        echo "Checking dir $DIR" >> /opt/090523_morning/zahorniuk/practice/task2/Result.txt
+
+          du -Sb $DIR 2>/dev/null |
+          sort -rn |
+          head -5  |
+          cat -n >> /opt/090523_morning/zahorniuk/practice/task2/Result.txt
+
+done
+
+echo "Completed"

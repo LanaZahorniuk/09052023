@@ -1,0 +1,14 @@
+Записать вывод команды df -h, но только первые 3 строки, в файл ВАШЕ_ИМЯ.txt, по пути /opt/test/ВАШЕ_ИМЯ
+Записать вывод из файла  /etc/group, но только последние пять строк, в файл ВАШЕ_ИМЯ_2.txt, по пути /opt/test/ВАШЕ_ИМЯ
+заархивировать получившиеся файлы в новый путь /tmp/
+Разархивировать получившийся архив в новый путь /var/newfolder
+
+
+
+mkdir -p /opt/test/lana
+df -h | head -3 >> /opt/test/lana/lana.txt
+cat /etc/group | tail -5 >> /opt/test/lana/lana2.txt
+tar -czf /tmp/lanaarh.tar.gz /opt/test/lana/
+tar -tf /tmp/lanaarh.tar.gz
+mkdir /var/newfolder
+tar -xzf /tmp/lanaarh.tar.gz -C /var/newfolder/
