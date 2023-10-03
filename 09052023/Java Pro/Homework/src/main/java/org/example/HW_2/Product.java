@@ -1,19 +1,20 @@
 package org.example.HW_2;
 
 public class Product {
+
     private int id;
     private String name;
-    private String category; // (категория товара из ProductCategory)
+    private ProductCategory category;
     private int price;
-    private int currency; // (валюта цены из Currency)
+    private Currency currency;
 
-public Product (int id, String name, String category, int price, int currency) {
-    this.id = id;
-    this.name = name;
-    this.category = category;
-    this.price = price;
-    this.currency = currency;
-}
+    public Product(int id, String name, ProductCategory category, int price, Currency currency) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.price = price;
+        this.currency = currency;
+    }
 
     public int getId() {
         return id;
@@ -31,11 +32,11 @@ public Product (int id, String name, String category, int price, int currency) {
         this.name = name;
     }
 
-    public String getCategory() {
+    public ProductCategory getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(ProductCategory category) {
         this.category = category;
     }
 
@@ -47,20 +48,18 @@ public Product (int id, String name, String category, int price, int currency) {
         this.price = price;
     }
 
-    public int getCurrency() {
+    public Currency getCurrency() {
         return currency;
     }
 
-    public void setCurrency(int currency) {
+    public void setCurrency(Currency currency) {
         this.currency = currency;
     }
 
-    public class Clothing {
-        private int size; //(размер одежды из Size)
-
-        public Clothing (int size) {
-            this.size = size;
-        }
+    @Override
+    public String toString() {
+        return "Product: " + name + ", category - " + category + ", price = " + price + "." + currency;
     }
 }
+
 
